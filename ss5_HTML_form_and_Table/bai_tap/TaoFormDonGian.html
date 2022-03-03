@@ -3,52 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-<table>
-    <form>
-    <tr>
-        <td colspan="3"> Sở thích của bạn</td>
-    </tr>
-    <tr>
-        <td><label for="họ và tên ">Họ và tên </label></td>
-        <td><input type="text" id="họ và tên " value=""/></td>
-    </tr>
-    <tr>
-        <td><label for="email"> Email </label></td>
-        <td><input type="text" id="email" value=""/></td>
-    </tr>
-    <table>
-        <tr>
-            <td rowspan="4 "> Sở thích</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" id="Thể thao" value="">
-                <label for="Thể thao"> Thể thao </label></td>
-            <td><input type="checkbox" id="Âm nhạc " value="">
-                <label for="Âm nhạc "> Âm nhạc </label></td>
-            <td><input type="checkbox" id="Đọc sách" value="">
-                <label for="Đọc sách"> Đọc sách </label></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" id="Lướt web " value="">
-                <label for="Lướt web "> lướt web </label></td>
-            <td><input type="checkbox" id="Chơi game  " value="">
-                <label for="Chơi game  "> Chơi game </label></td>
-            <td><input type="checkbox" id="Điện ảnh " value="">
-                <label for="Điện ảnh "> Điện ảnh </label></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" id="Du lịch" value="">
-                <label for="Du lịch"> Du lịch </label></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Gửi thông tin"></td>
-            <td><input type="Submit" value="Nhập lại "></td>
-        </tr>
+    <style>
+        .div {
+            background-color: aqua;
 
+        }
+
+        .table {
+            background-color: white;
+            height: 250px;
+            width:500px
+        }
+
+        .color {
+            color: orange
+        }
+    </style>
+</head>
+<body class="div">
+<div class="div">
+    <table class="table" style="margin-left: 35%">
+        <form>
+            <tr>
+                <td colspan="4 " style="background-color: red; text-align: center"> Sở thích của bạn</td>
+            </tr>
+            <tr>
+                <td><label for="hoten">Họ và tên </label></td>
+                <td><input type="text" id="hoten" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="email"> Email </label></td>
+                <td><input type="text" id="email" value=""/></td>
+            </tr>
+
+            <tr>
+                <td rowspan="5"> Sở thích</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="thethao" value="">
+                    <label style="color: orange " for="thethao"> Thể thao </label>
+                <input type="checkbox" id="amnhac" value="">
+                    <label class="color " for="amnhac"> Âm nhạc </label>
+                <input type="checkbox" id="docsach" value="">
+                    <label class="color " for="docsach"> Đọc sách </label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="luotweb" value="">
+                    <label class="color" for="luotweb"> lướt web </label>
+                <input type="checkbox" id="choigame" value="">
+                    <label class="color" for="choigame"> Chơi game </label>
+                <input type="checkbox" id="dienanh" value="">
+                    <label class="color" for="dienanh"> Điện ảnh </label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="Du lịch" value="">
+                    <label class="color" for="Du lịch"> Du lịch </label></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại "></td>
+            </tr>
+        </form>
     </table>
-    </form>
-</table>
+</div>
 </body>
 </html>
