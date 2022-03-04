@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            font-family: Arial
+        }
+        tr type="text/css">
+                              tr {background-color:lemonchiffon;}
+        tr:hover{background-color:lemonchiffon;}
+        tr:active{background-color:lemonchiffon;}
+    </style>
+</head>
+<body>
+<table style="width: 100%">
+    <form>
+
+        <h2><p> Market Research Servey</p></h2>
+        Please take a few moments to complete this satisfaction survey.
+        <hr>
+
+
+        <tr>
+            <td><span> What is your age range?</span><br>
+                <select style="width: 500px">
+                    <option value="18-24"> 18-24</option>
+                    <option value="25-34"> 25-34</option>
+                    <option value="35-50">35-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </td>
+        </tr>
+
+<!--        E chưa làm đc hiệu ứng background lên màu khi chuột đưa tới-->
+
+        <tr>
+            <td><span> What is your yearly income range?</span><br>
+                <select style="width: 500px">
+                    <option value="0-25000">$0-$25000</option>
+                    <option value="25001-50000">$25001-$50000</option>
+                    <option value="50001-100000">$50001-$100000</option>
+                    <option value="100000+">$100000+</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <p> Gender Indentity</p>
+                <input type="radio" id="Male" name="gender" value="">
+                <label for="Male"> Male </label><br>
+                <input type="radio" id="Female" name="gender" value="">
+                <label for="Female"> Female </label><br>
+                <input type="radio" id="Nonbinary" name="gender" value="">
+                <label for="Nonbinary"> Nonbinary </label><br>
+                <input type="radio" id="Other" name="gender" value="">
+                <label for="Other"> Other </label><br>
+                <input type="text" value=""><br>
+            </td>
+        </tr>
+        <tr>
+            <td><pre> Maximum of 250 characters.    Currently Used: 0 characters.</pre></td>
+
+<!--            Chưa làm đc lúc bấm vào other thì hiện dòng maximum-->
+
+        </tr>
+
+        <tr>
+            <td><span>Which of the following products have your purchased in the last 2 months. Please check all that apply.</span><br>
+                <input type="checkbox" id="product 1" name="product" value="">
+                <label for="product 1"> product 1</label><br>
+                <input type="checkbox" id="product 2" name="product" value="">
+                <label for="product 2"> product 2</label><br>
+                <input type="checkbox" id="product 3" name="product" value="">
+                <label for="product 3"> product 3</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td><span> How often would you use our new product?</span><br>
+                <input type="radio" id="daily" name="product" value="">
+                <label for="daily"> Daily</label><br>
+                <input type="radio" id="Weekly" name="product" value="">
+                <label for="Weekly"> Weekly</label><br>
+                <input type="radio" id="Monthly" name="product" value="">
+                <label for="Monthly"> Monthly</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td><span> What would you pay for the new product?</span><br>
+                $
+                <input style="width: 50px" type="text" value="">
+                .
+                <input style="width: 20px" type="text" value="">
+            </td>
+        </tr>
+        <tr>
+            <td><pre>  Dollars   Cent.</pre>
+
+            </td>
+
+
+        </tr>
+        <tr>
+            <td><span>What features would you like to see in the new product.</span><br>
+                <textarea></textarea><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span> Please rate your level of agreemnet with the following statements.</span><br>
+            </td>
+        </tr>
+        <table border="1">
+            <tr style="background-color:lightgray">
+                <th style="width: 300px"></th>
+                <th>Strongly Disagree</th>
+                <th> Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td>
+                    <span> Our products are priced fairly. </span>
+                </td>
+
+                <th>
+                    <input type="radio" name="select"><br> 1
+                </th>
+                <th>
+                    <input type="radio" name="select"><br> 2
+                </th>
+                <th>
+                    <input type="radio" name="select"><br> 3
+                </th>
+                <th>
+                    <input type="radio" name="select"><br> 4
+                </th>
+
+            </tr>
+            <tr style="background-color:lightgray">
+                <td>
+                    <span> Our products are high quality. </span>
+                </td>
+
+                <th>
+                    <input type="radio" name="select1"><br> 1
+                </th>
+                <th>
+                    <input type="radio" name="select1"><br> 2
+                </th>
+                <th>
+                    <input type="radio" name="select1"><br> 3
+                </th>
+                <th>
+                    <input type="radio" name="select1"><br> 4
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <span> you would recommend our product to a friend or coworker. </span>
+                </td>
+
+                <th>
+                    <input type="radio" name="select2"><br> 1
+                </th>
+                <th>
+                    <input type="radio" name="select2"><br> 2
+                </th>
+                <th>
+                    <input type="radio" name="select2"><br> 3
+                </th>
+                <th>
+                    <input type="radio" name="select2"><br> 4
+                </th>
+            </tr>
+        </table>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+    </form>
+</table>
+
+</body>
+</html>
