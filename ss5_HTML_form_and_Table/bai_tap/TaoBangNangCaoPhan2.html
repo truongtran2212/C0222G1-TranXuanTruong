@@ -6,10 +6,14 @@
     <style>
         th{ height: 50px; width: 80px; font-family: Arial;
         }
+        .day{ background-color: orange
+        }
+        .border{border-style: none
+        }
     </style>
 </head>
 <body>
-<table border="1" >
+<table border="1" style="border-style: none">
     <caption style="color: dodgerblue; font-size: 40px">    Tháng 10 - Octorber
 
     </caption>
@@ -17,22 +21,22 @@
 
         <tr style="color: white">
             <th style="background-color: red">C.Nhật</th>
-            <th style="background-color: orange">T.Hai</th>
-            <th style="background-color: orange">T.Ba</th>
-            <th style="background-color:orange">T.Tư</th>
-            <th style="background-color: orange">T.Năm</th>
-            <th style="background-color: orange">T.Sáu</th>
-            <th style="background-color: blue">T.Bảy</th>
+            <th class="day">T.Hai</th>
+            <th class="day">T.Ba</th>
+            <th class="day">T.Tư</th>
+            <th class="day">T.Năm</th>
+            <th class="day">T.Sáu</th>
+            <th style="background-color: deepskyblue">T.Bảy</th>
         </tr>
         <tr>
-<!--            e k cắt đc viền dọc của cái tr này -->
-            <th style="color: red">Sun</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th style="color: deepskyblue">Sat</th>
+            <th style="color: red" class="border">Sun</th>
+            <th class="border">Mon</th>
+            <th class="border">Tue</th>
+            <th class="border">Wed</th>
+            <th class="border">Thu</th>
+            <th class="border">Fri</th>
+            <th style="color: deepskyblue" class="border">Sat</th>
+<!--            có cách nào để k lặp lại class="border" liên tục k a-->
         </tr>
         <tr>
             <th></th>
