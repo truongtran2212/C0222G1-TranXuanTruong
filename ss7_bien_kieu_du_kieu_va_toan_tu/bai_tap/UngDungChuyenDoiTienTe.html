@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+            <tr>
+            <th><label for="Amount">Amount </label></th>
+
+            <th label for="FromCurrency"> From Currency</th>
+            <th></th>
+            <th label for="ToCurrency"> To Currency</th>
+        <tr>
+            <td><input type="text" id="Amount"></td>
+            <td>
+                <select id="FromCurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </td>
+        <td></td>
+            <td>
+                <select id="ToCurrency">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="doitien()" style="background-color: dodgerblue;color: white">Convert
+                </button>
+            </td>
+        </tr>
+    </table>
+<p id="kk"></p>
+<script>
+   function doitien() {
+       let nhapvao = (document.getElementById('Amount').value);
+       let FromCurrency = (document.getElementById('FromCurrency').value);
+       let ToCurrency = (document.getElementById('ToCurrency').value);
+       if (ToCurrency == FromCurrency) {
+       document.getElementById("kk").innerHTML = 'result: ' +nhapvao;
+       }
+       if (FromCurrency == "VND" && ToCurrency == "USD"){
+           document.getElementById('kk').innerHTML = 'Asult = ' + nhapvao/23000;
+       }
+       if (FromCurrency == "USD" && ToCurrency == "VND"){
+          document.getElementById('kk').innerHTML =  'Asult = ' + nhapvao*23000;
+       }
+   }
+</script>
+</body>
+</html>
