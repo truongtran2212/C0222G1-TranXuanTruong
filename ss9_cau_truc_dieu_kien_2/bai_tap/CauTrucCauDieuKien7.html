@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let call = parseInt(prompt('Số phút'));
+    if (call <= 1) {
+        alert('2000VND');
+    } else if (call > 1 && call <= 10) {
+        alert(call * 1000 + 'VND');
+    } else if (call > 10) {
+        alert(call * 500 + 'VND');
+    }
+</script>
+</body>
+</html>
