@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #No {
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<h1> Do you love me?</h1>
+<button onclick="ClickYes()" id="Yes"> Yes </button>
+<button onmouseover="ClickNo()" id="No"> No </button>
+<p id="result"></p>
+<script>
+    function ClickYes() {
+        alert('yes you alright')
+    }
+    function ClickNo() {
+        var x = (Math.random() * window.innerWidth);
+        var y = (Math.random() * window.innerHeight);
+        document.getElementById("No").style.left = x + "px";
+        document.getElementById("No").style.top = y + "px";
+    }
+</script>
+</body>
+</html>
