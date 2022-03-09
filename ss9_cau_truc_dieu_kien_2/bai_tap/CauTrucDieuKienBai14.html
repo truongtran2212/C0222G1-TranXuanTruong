@@ -6,11 +6,18 @@
 </head>
 <body>
 <script>
-let a = prompt('nhập số a')
-    b = prompt('nhập số b')
-    c = prompt('nhập số c')
+    let a = parseInt(prompt('nhập số a'));
+    let b = parseInt(prompt('nhập số b'));
+    let c = parseInt(prompt('nhập số c'));
+let delta = Math.pow(b,2) - 4 * a * c
+    if(delta < 0){
+        document.write('phương trình vô nghiệm')
+    }else if(delta == 0){
+        document.write('Phương trình có nghiệm kép X1=X2= '+ (-b/2*a))
 
-    let x = 
+    }else if(delta > 0){
+        document.write('Có nghiệm 2 nghiệm phân biệt: X1= ' + (-b + Math.sqrt(delta))/2*a +';'+'X2 ='+(-b - Math.sqrt(delta))/2*a)
+    }
 </script>
 </body>
 </html>

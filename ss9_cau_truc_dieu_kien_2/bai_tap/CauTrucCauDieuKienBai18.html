@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = parseInt(prompt('Tiền lương'));
+    let total = 0;
+    if (a > 0) {
+        if (a < 10000000) {
+            alert('Không cần đóng thuế')
+        } else if (a >= 10000000 && a < 25000000) {
+            total = a * 0.05;
+            alert('Số tiền thuế 5% : ' + total.toLocaleString());
+        } else if (a >= 25000000 && a < 50000000) {
+            total = a * 0.1;
+            alert('Số tiền thuế 10% : ' + total.toLocaleString());
+        } else {
+            total = a * 0.2;
+            alert('Số tiền thuế 20% : ' + total.toLocaleString());
+        }
+    } else {
+        alert('Nhâp lại');
+    }
+</script>
+</body>
+</html>
