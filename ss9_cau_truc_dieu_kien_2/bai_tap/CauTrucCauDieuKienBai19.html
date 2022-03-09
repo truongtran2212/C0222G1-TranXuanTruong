@@ -10,8 +10,8 @@
 
     let a = parseInt(prompt('Số tiền ban đầu'));
     let b = parseInt(prompt('Số tháng cho vay'));
-    let total = a * Math.pow(1.07,b)
-    if(b>0 && b <12){
+    let total = a * Math.pow(1.01,b)
+    if(b>0 && b <= 12){
         alert('Số tiền nhận đc : ' + total.toLocaleString() + 'VND')
     }else{
         alert('vui lòng nhập lại')
