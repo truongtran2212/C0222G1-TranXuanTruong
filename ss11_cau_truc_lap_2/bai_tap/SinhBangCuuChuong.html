@@ -3,93 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        td{ height: 30px; width: 130px}
-    </style>
+
 </head>
 <body>
-<table border="1">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
 
-</table>
+<script>
+    let num1 = '<table border = 1; width="900px">';
+    let result = 0;
+    for (let i = 1; i <= 9; i++) {
+        num1 += '<tr>';
+        for (let j = 1; j <= 10; j++) {
+            num1 += '<td>' + i + 'x' + j + '= ' + i * j + '</td>';
+        }
+        num1 += '</tr>';
+    }
+    num1 += '</table>';
+    document.write(num1);
+</script>
 </body>
 </html>
