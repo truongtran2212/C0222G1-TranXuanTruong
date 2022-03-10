@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let sum = [0, 1];
+
+    for (let i = sum.length; i < 20; i++) {
+        sum[i] = sum[i - 1] + sum[i - 2];
+        if (sum[i] % 5 == 0) {
+            break;
+        }
+    }
+        document.write(sum);
+
+</script>
 </body>
 </html>

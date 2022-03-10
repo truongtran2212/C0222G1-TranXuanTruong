@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+let total2=0
+    let total;
+    let num1 = 0;
+    let num2 = 1;
+    for (let i = 1; i <= 20; i++) {
+        total = num1 + num2;
+        num1 = num2;
+        num2 = total;
+        total2 += total
+        document.write(total + '<br>');
+
+    }
+    document.write('Tổng 20 số đầu tiên của dãy fibnacci = ' + total2)
+
+
+</script>
 </body>
 </html>
