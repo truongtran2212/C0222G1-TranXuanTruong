@@ -6,18 +6,17 @@
 </head>
 <body>
 <script>
-    let h = 7;
-    for (let i = 0; i < h; i++) {
-
-        for (let j = i; j < h -1  ; j++) {
-            document.writeln('&nbsp&nbsp')
+    const h = 5;
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= h; j++) {
+            if (j >= i) {
+                document.writeln('*');
+            } else {
+                document.writeln("&nbsp&nbsp");
+            }
         }
-        for (let j = 0; j <= i ; j++) {
-            document.writeln('*')
-        }
-        document.writeln('<br>')
+        document.writeln('<br>');
     }
-
 </script>
 </body>
 </html>
