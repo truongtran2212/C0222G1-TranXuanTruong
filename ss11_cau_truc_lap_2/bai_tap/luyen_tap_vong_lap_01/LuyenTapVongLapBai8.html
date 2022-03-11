@@ -5,8 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<script>
+<button onclick="Start()" id="click">Start</button>
 
+<script>
+    function Start() {
+        let number = parseInt(prompt('Nhập số đi nào'));
+        let random = Math.floor((Math.random() * number) + 1);
+
+        for (; ;) {
+            let b = parseInt(prompt('Nhập số đoán'));
+            if (b > random) {
+                alert('nhập nhỏ lại');
+            } else if (b < random) {
+                alert('nhập lớn lên');
+            } else {
+                alert('Đúng rồi');
+                break;
+            }
+        }
+
+    }
 </script>
 </body>
 </html>

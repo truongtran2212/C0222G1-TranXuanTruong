@@ -8,12 +8,12 @@
 <script>
     const h = 5;
     for (let i = 1; i <= h; i++) {
-document.writeln('<br>')
+        document.writeln('<br>');
         for (let j = 0; j <= h; j++) {
-            if (j < i) {
-                document.writeln('');
-            } else {
+            if (j >= i) {
                 document.writeln('*');
+            } else {
+                document.writeln('');
             }
         }
 
