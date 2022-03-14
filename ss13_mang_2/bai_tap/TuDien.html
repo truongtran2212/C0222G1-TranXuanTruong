@@ -9,17 +9,15 @@
     let search = prompt('input English');
     let english = ['dog', 'cat', 'duck', 'frog', 'elephant', 'shark'];
     let vietnamese = ['chó', 'mèo', 'vịt', 'ếch', 'voi', 'cá mập'];
-
-    let index = -1;
-
+    let flag = false;
     for (let i = 0; i < english.length; i++) {
         if (english[i] === search) {
-            index = i;
+            alert(vietnamese[i]);
+            flag = true;
+            break;
         }
     }
-    if (index !== -1) {
-        alert(vietnamese[index]);
-    } else {
+    if (!flag) {
         alert('Không tìm thấy');
     }
 
