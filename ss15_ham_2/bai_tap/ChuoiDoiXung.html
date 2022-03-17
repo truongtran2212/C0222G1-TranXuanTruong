@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào 1 kí tự');
+    let flag = false;
+    for (let i = 0, c = 1; i < a.length - c; i++, c++) {
+        if (isNaN(a) === false) {
+            alert('Đây không phải là chuỗi');
+            break;
+        }
+        if (a[i] === a[a.length - c]) {
+            flag = true;
+        } else {
+            flag = false;
+            break;
+        }
+    }
+    if (flag === true) {
+        alert('Đối xứng');
+    } else {
+        alert('false');
+    }
+</script>
+</body>
+</html>
