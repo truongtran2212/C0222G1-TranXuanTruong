@@ -6,15 +6,17 @@
 </head>
 <body>
 <script>
-    function dienTich(S) {
-        return S*S*3.14
+    function dienTich(r) {
+        return r * r * 3.14;
     }
-    function chuVi(C) {
-        return C*2*3.14
+
+    function chuVi(r) {
+        return r * 2 * 3.14;
     }
-    let r = parseInt(prompt('Bán kính hình tròn'))
-    alert('Diện tích hình tròn là: ' + dienTich(r))
-    alert('Chu vi hình tròn là: ' + chuVi(r))
+
+    let r = parseInt(prompt('Bán kính hình tròn'));
+    alert('Diện tích hình tròn là: ' + dienTich(r));
+    alert('Chu vi hình tròn là: ' + chuVi(r));
 </script>
 </body>
 </html>

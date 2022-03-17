@@ -6,31 +6,29 @@
 </head>
 <body>
 <script>
-    function swap(){
-       a = a + b
-        b = a - b
-        a = a - b
-        return a, b
+    function swap(a, b) {
+        alert(a + ", " + b);
+        temp = a;
+        a = b;
+        b = temp;
+        alert(a + ", " + b);
     }
-    let a = parseInt(prompt('firt number'));
+
+    let a = parseInt(prompt('first number'));
     let b = parseInt(prompt('second number'));
-
-    alert(swap(a))
-    alert(swap(b))
-
-
-
+    let temp;
+    swap(a, b);
 
 
     // let a = parseInt(prompt('firt number'));
     // let b = parseInt(prompt('second number'));
     //
-    // a = a + b
-    // b = a - b
-    // a = a - b
+    // a = a + b;
+    // b = a - b;
+    // a = a - b;
     //
-    // alert(a)
-    // alert(b)
+    // alert(a);
+    // alert(b);
 </script>
 </body>
 </html>

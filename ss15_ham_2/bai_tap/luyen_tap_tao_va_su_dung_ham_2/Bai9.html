@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demKiTu(count) {
+        for (let i = 0; i < 5; i++) {
+            b[i] = prompt('Nhập 1 số bất kì');
+            if (b[i] === c)
+                count++;
+        }
+        if (count > 0) {
+            return count
+        } else {
+            return -1
+        }
+    }
+    let b = [];
+    let c = prompt('Nhập 1 số');
+    let count = 0;
+    alert(demKiTu(count))
+</script>
+</body>
+</html>

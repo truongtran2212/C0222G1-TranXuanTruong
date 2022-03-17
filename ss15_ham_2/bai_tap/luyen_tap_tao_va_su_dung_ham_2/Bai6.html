@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function number() {
+    function number(num) {
         for (let i = 0; i < num; i++) {
             if (!isNaN(Number(num)) && Number(num) > 0 && Number.isInteger(parseFloat(num))) {
                 num = parseInt(num);
@@ -16,6 +16,7 @@
         return false;
 
     }
+
     let num = prompt('Input number');
     alert(number(num));
 

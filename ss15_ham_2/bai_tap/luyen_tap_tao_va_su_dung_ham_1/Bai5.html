@@ -6,15 +6,16 @@
 </head>
 <body>
 <script>
-    function add() {
+    function add(search) {
         for (let i = 0; i < ngoiSao.length; i++) {
             if (ngoiSao[i] === search) {
                 alert(chomSao[i]);
                 return true;
             }
         }
-        return 'Nhập lại'
+        return 'Nhập lại';
     }
+
     let search = prompt('Nhập 1 ngôi sao: ');
     let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
     let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major Leo"];
