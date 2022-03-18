@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let c = prompt('Nhập 1 kí tự');
+    if(c.length > 1){
+        alert('Vui lòng nhập lại')
+    }else if(c >= 'a' && c <= 'z'|| c >= 'A' && c <= 'Z'){
+        if(c === 'a' || c==='u' || c==='e' || c==='o' || c==='i' || c==='A' || c==='U' || c==='E'|| c==='O'|| c==='I'){
+            alert(c + ' là chữ nguyên âm')
+        }else{
+            alert(c + ' là phụ âm')
+        }
+    }else {
+        alert(c + ' không thuộc Alphabet')
+    }
+
+
+
+</script>
+</body>
+</html>
