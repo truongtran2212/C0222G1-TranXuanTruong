@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+    }
+
+    class SwitchButton {
+        constructor(status) {
+            this.status = status;
+        }
+
+        connectToLamp() {
+            for (let i = 0; i <= 10; i++) {
+                alert(this.status[0]);
+                alert(bongDen.status[0]);
+            }
+        }
+    }
+
+    let congTac = new SwitchButton(['SwitchOn', 'SwitchOff']);
+    let bongDen = new ElectricLamp(['TurnOn', 'TurnOff']);
+
+    congTac.connectToLamp();
+    bongDen.connectToLamp();
+</script>
+</body>
+</html>

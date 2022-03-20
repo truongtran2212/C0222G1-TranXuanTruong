@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weight) {
+           this.weight = weight
+        }
+
+    }
+    class Human{
+        constructor(name, gender, weight) {
+            this.name = name
+            this.gender = gender
+            this.weight = weight
+        }
+        speak(){
+            console.log('Táo ngọt đấy')
+        }
+        eat(apple){
+       
+            for (let i = 1; i <= 10; i++) {
+                if (apple.weight > 0) {
+                    nguoi.weight += 1;
+                    apple.weight -= 1;
+                }
+                alert(nguoi.weight);
+                alert(apple.weight);
+            }
+
+        }
+        testWeightApple(apple){
+            console.log(apple.weight)
+        }
+
+    }
+
+    let tao = new Apple(10)
+    let nguoi = new Human('John', 'male', 80)
+
+    nguoi.eat(tao)
+    nguoi.speak()
+    nguoi.testWeightApple(tao)
+</script>
+</body>
+</html>

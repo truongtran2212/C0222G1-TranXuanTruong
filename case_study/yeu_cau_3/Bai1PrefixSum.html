@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function prefix_sums(arr) {
+       let b = [];
+        for (let i = 0; i < arr.length; i++) {
+            b[i] = 0;
+            for (let j = 0; j < i + 1; j++) {
+                b[i] += arr[j];
+            }
+        }
+        return b;
+    }
+    let a = [1, 2, 3, 4, 5]
+    console.log(prefix_sums(a));
+
+
+
+
+
+
+
+
+
+
+
+    // function prefixSums(a) {
+    //
+    //     for (let i = 0; i < a.length; i++) {
+    //         b[i] = 0;
+    //         for (let j = 0; j < i+1; j++) {
+    //             b[i] += a[j];
+    //         }
+    //
+    //     }
+    //     return b;
+    // }
+    // let a = [1, 2, 3, 4, 5];
+    // let b = [];
+    // document.write(prefixSums(b));
+
+</script>
+</body>
+</html>
