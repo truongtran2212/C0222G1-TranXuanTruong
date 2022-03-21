@@ -6,30 +6,37 @@
 </head>
 <body>
 <script>
-    class ElectricLamp {
+    class Electriclamp {
         constructor(status) {
-            this.status = status;
+            this.status = status
         }
+        trangThaiBongDen(){
+            console.log(this.status)
+        }
+
     }
 
     class SwitchButton {
-        constructor(status) {
-            this.status = status;
+
+        SwitchOn(denObj) {
+            denObj.status = 'Bóng đèn đang bật'
+            console.log('bật công tắc')
         }
 
-        connectToLamp() {
-            for (let i = 0; i <= 10; i++) {
-                alert(this.status[0]);
-                alert(bongDen.status[0]);
-            }
+        SwitchOff(denObj) {
+            denObj.status = 'Bóng đèn đang tắt'
+            console.log('tắt công tắc')
         }
     }
+    let den = new Electriclamp('Tắt')
+    let congTac = new SwitchButton()
+    // for (let i = 0; i <5 ; i++) {
 
-    let congTac = new SwitchButton(['SwitchOn', 'SwitchOff']);
-    let bongDen = new ElectricLamp(['TurnOn', 'TurnOff']);
-
-    congTac.connectToLamp();
-    bongDen.connectToLamp();
+        den.trangThaiBongDen()
+        congTac.SwitchOn(den)
+        den.trangThaiBongDen()
+        congTac.SwitchOff(den)
+    // }
 </script>
 </body>
 </html>

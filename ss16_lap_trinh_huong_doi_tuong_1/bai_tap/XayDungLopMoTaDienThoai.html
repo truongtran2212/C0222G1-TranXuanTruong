@@ -6,21 +6,61 @@
 </head>
 <body>
 <script>
+
     class Mobile {
-        constructor(pin, dangsoan, danhan, dagui, trangthai) {
-            this.pin = pin;
-            this.dangsoan = dangsoan;
-            this.danhan = danhan;
-            this.dagui = dagui;
-            this.trangthai = trangthai
+        constructor(name) {
+            this.name = name;
+            this.pin = 100;
+            this.dangsoan = [];
+            this.danhan = [];
+            this.dagui = [];
+            this.status = true;
         }
-        testOnOrOff(){
+
+
+        onOff() {
+            this.status = !this.status;
 
         }
 
+        trangThaiDienThoai() {
+            return this.status;
+
+        }
+
+        soanTinNhan(string) {
+            if(this.status) {
+                console.log(this.name + ' soạn tin nhắn là: ' + string);
+                this.dangsoan.push(string);
+                this.pin--;
+            }
+        }
+
+        guiTinNhan(mobileObj) {
+            if(this.status) {
+                console.log(this.name + ' đã gửi tin nhắn đến ' + mobileObj.name);
+                mobileObj.danhan.push(this.dangsoan);
+                this.pin--;
+            }
+        }
+
+        docTinNhanDen() {
+            if(this.status) {
+                console.log(this.danhan[this.danhan.length - 1].join(''));
+                this.pin--;
+            }
+        }
     }
 
-    let a = new phone(100, '090xxxx', 'abc@gmail.com', 'hello', 'on');
+    let nokia = new Mobile('Nokia');
+    let iphone = new Mobile('Iphone');
+
+
+    nokia.soanTinNhan('Trường');
+    nokia.guiTinNhan(iphone);
+    iphone.docTinNhanDen();
+
+
 </script>
 </body>
 </html>

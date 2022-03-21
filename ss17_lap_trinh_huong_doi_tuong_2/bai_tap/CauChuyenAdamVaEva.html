@@ -6,45 +6,60 @@
 </head>
 <body>
 <script>
-    class Apple{
-        constructor(weight) {
-           this.weight = weight
+    class Fruits {
+        constructor(name, weight) {
+            this.weight = weight;
+            this.name = name;
+        }
+    }
+
+    class Human {
+        constructor(name, weight) {
+            this.name = name;
+
+            this.weight = weight;
         }
 
-    }
-    class Human{
-        constructor(name, gender, weight) {
-            this.name = name
-            this.gender = gender
-            this.weight = weight
-        }
-        speak(){
-            console.log('Táo ngọt đấy')
-        }
-        eat(apple){
-       
-            for (let i = 1; i <= 10; i++) {
-                if (apple.weight > 0) {
-                    nguoi.weight += 1;
-                    apple.weight -= 1;
-                }
-                alert(nguoi.weight);
-                alert(apple.weight);
+        checkFruits(fruitsobj) {
+            if (fruitsobj.weight > 0) {
+                console.log(this.name + ': Quả này ăn đc');
             }
-
-        }
-        testWeightApple(apple){
-            console.log(apple.weight)
         }
 
+        eatFruits(fruitsobj) {
+                console.log(this.name + ': ' + fruitsobj.name + ' ngon quá');
+                this.weight++;
+                fruitsobj.weight--;
+                console.log(fruitsobj.name + ' còn ' + fruitsobj.weight);
+                console.log(this.name + ' nặng ' + this.weight);
+        }
+
+
+        speak(noi) {
+            console.log(this.name + ': ' + noi);
+        }
     }
 
-    let tao = new Apple(10)
-    let nguoi = new Human('John', 'male', 80)
+    let adam = new Human('Adam', 80);
+    let eva = new Human('Eva', 45);
+    let apple = new Fruits('Apple', 10);
 
-    nguoi.eat(tao)
-    nguoi.speak()
-    nguoi.testWeightApple(tao)
+    adam.checkFruits(apple);
+    eva.speak('A ăn thử đi');
+    adam.eatFruits(apple);
+    adam.speak('E cũng ăn thử đi');
+    eva.eatFruits(apple);
+
+    for (let i = 0; i < 10; i++) {
+        adam.eatFruits(apple);
+        eva.eatFruits(apple);
+        if (apple.weight === 0) {
+            console.log('Hết táo rồi');
+            break;
+        }
+    }
+
+
 </script>
 </body>
 </html>
