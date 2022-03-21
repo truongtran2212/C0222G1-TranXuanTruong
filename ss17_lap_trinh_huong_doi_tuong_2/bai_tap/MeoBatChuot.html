@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rat{
+        constructor(name, weight, speed, status) {
+            this.name = name
+            this.weight = weight
+            this.speed = speed
+            this.status = status
+        }
+        growl() {
+            console.log('chít chít')
+        }
+    }
+    class Cat {
+        constructor(name, weight, speed) {
+            this.name = name
+            this.weight = weight
+            this.speed = speed
+        }
+
+        growl() {
+            console.log("meo, meo")
+        }
+
+        catch(ratObj) {
+            if (this.speed > ratObj.speed) {
+                console.log(this.name + ' đã bắt được ' + ratObj.name)
+            } else {
+                console.log(ratObj.name + ' chạy nhanh quá')
+            }
+        }
+
+        eat(ratObj) {
+            if (ratObj.status === "song") {
+                console.log(this.name + ' đã ăn thịt ' + ratObj.name)
+                this.weight += ratObj.weight
+                console.log(this.name + ' cân nặng đã tăng lên ' + this.weight)
+            } else {
+                console.log(ratObj.name + ' hôi quá')
+            }
+        }
+    }
+    let ratJerry = new Rat('Jerry', 5, 4,"song")
+    let catTom = new Cat('Tom', 10, 6)
+
+    ratJerry.growl()
+    catTom.growl()
+
+    catTom.catch(ratJerry)
+    catTom.eat(ratJerry)
+
+
+</script>
+</body>
+</html>
