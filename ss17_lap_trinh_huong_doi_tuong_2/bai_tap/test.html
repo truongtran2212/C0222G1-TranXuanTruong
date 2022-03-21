@@ -6,58 +6,67 @@
 </head>
 <body>
 <script>
-    class Mobile {
-        constructor(name) {
-            this.name = name;
-            this.batterty = 100;
-            this.draft = "";
-            this.inbox = [];
-            this.outbox = [];
-            this.status = true;
+    function solveMeFirst(n) {
+        for (let i = 0; i < ar.length ; i++) {
+            n += ar[i]
         }
-
-        checkStatus() {
-            return this.status;
-            // console.log(this.status)
-        }
-
-        onOff() {
-            this.status = !this.status;
-            // console.log(this.status = ! this.status)
-        }
-
-        writting(text) {
-            this.draft = text;
-            // console.log(this.draf)
-            this.batterty--;
-        }
-
-        sendMessenger(Iphone) {
-            // this: điện thoại hiện tại
-            // Iphone : điện thoại gửi đi
-            // chuyển tin nhắn từ this sang hộp thư đến Iphone
-            Iphone.inbox.push(this.draft);
-            // chuyển tin nhắn của hộp this đến hộp thư đã gửi của this
-            this.outbox.push(this.draft);
-            this.draft = "";
-            this.batterty--;
-        }
-        getInbox() {
-            this.batterty--;
-            return this.inbox;
-
-        }
-        getOutbox() {
-            if (this.status) {
-                this.batterty--;
-                return this.outbox;
-            }
-
-        }
+        return n
     }
-
-    let nokia = new Mobile("It's me");
-    let iphone = new Mobile("You");
+    let n = 0
+    let ar = [1,2,3,4,10,11]
+    alert(solveMeFirst(n))
+    // class Mobile {
+    //     constructor(name) {
+    //         this.name = name;
+    //         this.batterty = 100;
+    //         this.draft = "";
+    //         this.inbox = [];
+    //         this.outbox = [];
+    //         this.status = true;
+    //     }
+    //
+    //     checkStatus() {
+    //         return this.status;
+    //         // console.log(this.status)
+    //     }
+    //
+    //     onOff() {
+    //         this.status = !this.status;
+    //         // console.log(this.status = ! this.status)
+    //     }
+    //
+    //     writting(text) {
+    //         this.draft = text;
+    //         // console.log(this.draf)
+    //         this.batterty--;
+    //     }
+    //
+    //     sendMessenger(Iphone) {
+    //         // this: điện thoại hiện tại
+    //         // Iphone : điện thoại gửi đi
+    //         // chuyển tin nhắn từ this sang hộp thư đến Iphone
+    //         Iphone.inbox.push(this.draft);
+    //         // chuyển tin nhắn của hộp this đến hộp thư đã gửi của this
+    //         this.outbox.push(this.draft);
+    //         this.draft = "";
+    //         this.batterty--;
+    //     }
+    //     getInbox() {
+    //         this.batterty--;
+    //         return this.inbox;
+    //
+    //     }
+    //     getOutbox() {
+    //         if (this.status) {
+    //             this.batterty--;
+    //             return this.outbox;
+    //         }
+    //
+    //     }
+    // }
+    //
+    // let nokia = new Mobile("It's me");
+    // let iphone = new Mobile("You");
     // let Lamp = function (name) {
     //     this.name = name;
     //     this.status = false;

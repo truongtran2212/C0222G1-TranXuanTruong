@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    function giaiThua(number) {
+    function giaiThua(total) {
         for (let i = 1; i <= number; i++) {
             total *= i;
         }
         return total;
     }
-
     let total = 1;
     let number = parseInt(prompt('Nhập 1 số'));
-    alert(giaiThua(number));
+    alert(giaiThua(total))
 </script>
 </body>
 </html>
