@@ -6,12 +6,12 @@
 </head>
 <body>
 <script>
-    function prefix_sums(arr) {
+    function prefix_sums(a) {
        let b = [];
-        for (let i = 0; i < arr.length; i++) {
-            b[i] = 0;
-            for (let j = 0; j < i + 1; j++) {
-                b[i] += arr[j];
+        for (let i = 0; i < a.length; i++) {
+                b[i] = 0;
+            for (let j = 0; j <= i; j++) {
+                b[i] += a[j];
             }
         }
         return b;

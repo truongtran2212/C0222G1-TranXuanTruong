@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i = 0; i < 5; i++) {
+        let a = parseInt(prompt('1. Cafe' + '\n' + '2. Cam vắt' + '\n' + '3. Nước ép cà rốt' + '\n'
+            + '4. Nước ép cà chua' + '\n' + '5. Nước lọc' + '\n' + '6. Nước dừa' + '\n' + '7. Thoát'));
+        let b = [2000, 4000, 6000, 8000, 10000, 12000];
+        let d = ['cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+        if (a === 7) {
+            alert('Cảm ơn quý khách');
+            break;
+        } else {
+            let c = parseInt(prompt('Số lượng mua'));
+            alert('Số tiền của 1 ' + d[a - 1] + ' là ' + (b[a - 1]).toLocaleString()
+                + ' .Tổng số tiền phải trả ' + (b[a - 1] * c).toLocaleString());
+            break;
+        }
+    }
+</script>
+</body>
+</html>

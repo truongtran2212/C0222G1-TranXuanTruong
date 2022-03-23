@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 'addccdsdh';
+    let b = 'abacahjfd';
+    let c = [];
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < b.length; j++) {
+            if (a[i] === b[j]) {
+                c.push(a[i]);
+                b=b.replace(b[j],'');
+                break;
+            }
+        }
+    }
+    console.log(c);
+
+</script>
+</body>
+</html>
