@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function minMax(m, n) {
+    //     let arr = [
+    //         []
+    //     ];
+    //     let arr1 = [];
+    //     for (let i = 0; i < m; i++) {
+    //         arr.push([]);
+    //         for (let j = 0; j < n; j++) {
+    //             arr[i][j] = parseInt(prompt(' Nhập phần tử vào mảng ' + i));
+    //             arr1.push(arr[i][j]);
+    //             arr1.sort(function (a, b) {
+    //                 return a - b;
+    //             });
+    //
+    //         }
+    //
+    //     }
+    //     console.log(arr1);
+    //     let min = arr1[0];
+    //     let max = arr1[arr1.length - 1];
+    //     return 'Giá trị lớn nhất có trong mảng là ' + max + '\n' + 'Giá trị nhỏ nhất có trong mảng là ' + min
+    // }
+    //
+    // let m = parseInt(prompt('Nhập vào số mảng'));
+    // let n = parseInt(prompt(' Nhập vào số phần tử'));
+    // console.log(minMax(m, n));
+
+
+
+
+
+
+
+
+    // function isPrimeNumber(number) {
+    //     let count = 0;
+    //
+    //     for (let i = 2; i < number; i++) {
+    //         if (number % i === 0) {
+    //             count++;
+    //         }
+    //     }
+    //
+    //     return count < 1;
+    // }
+    //
+    // console.log(isPrimeNumber());
+    //
+    // function snt() {
+    //     let m = parseInt(prompt('Nhập vào số mảng'));
+    //     let n = parseInt(prompt('Nhập vào số phần tử trong mảng'));
+    //     let arr = [
+    //         []
+    //     ];
+    //     let count = 0;
+    //     let arr1 = [];
+    //     for (let i = 0; i < m; i++) {
+    //         arr.push([]);
+    //         for (let j = 0; j < n; j++) {
+    //             arr[i][j] = parseInt(prompt('Nhập các phần tử vào mảng ' + i));
+    //             if (isPrimeNumber(arr[i][j]) && arr[i][j] >= 2) {
+    //                 arr1.push(arr[i][j]);
+    //                 count++;
+    //             }
+    //         }
+    //     }
+    //     return 'Gồm có ' + count + ' số nguyên tố là: ' + arr1;
+    // }
+    // console.log(snt());
+
+
+    // function tinhTong() {
+    //     let m = parseInt(prompt('Nhập vào số mảng'));
+    //     let n = parseInt(prompt('Nhập vào số phần tử trong mảng'));
+    //     let sum = 0;
+    //     let arr = [
+    //         []
+    //     ];
+    //     let arr1 = [];
+    //     for (let i = 0; i < m; i++) {
+    //         arr.push([]);
+    //         for (let j = 0; j < n; j++) {
+    //             arr[i][j] = parseInt(prompt('Nhập các phần tử vào mảng ' + i));
+    //             if (arr[i][j] % 2 === 0) {
+    //                 arr1.push(arr[i][j]);
+    //
+    //             }
+    //         }
+    //     }
+    //     for (let i = 0; i < arr1.length; i++) {
+    //         sum += arr1[i];
+    //     }
+    //
+    //     return sum;
+    // }
+    //
+    // console.log(tinhTong());
+
+
+    // let a = 'abcddegsae'; // a b d d e e a
+    // let b = 'ajkebddae';  // a b d d e e a
+    // let c = [];
+    // for (let i = 0; i < a.length; i++) {
+    //     for (let j = 0; j < b.length; j++) {
+    //         if (a[i] === b[j]){
+    //             c.push(b[j]);
+    //             b = b.replace(b[j],' ')
+    //         }
+    //     }
+    // }
+    // console.log(c)
+
+
+    // let d = [];
+    // for (let i = 0; i < c.length; i++) {
+    //     if(c[i] !== c[i + 1]){
+    //         d.push(c[i])
+    //     }
+    // }
+    // console.log(d);
+
+    let s = 'abcddabbeghka';
+    let a = [];
+    let b = [];
+    let count = 0
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] !== s[i + 1]) {
+            a.push(s[i]);
+        }
+    }
+    for (let i = 0; i <a.length ; i++) {
+        if(b.indexOf(a[i]) === -1){
+            b.push(a[i])
+            count++
+        }
+    }
+    console.log('Có ' + count + ' kí tự khác nhau là ' + b.join(' '))
+
+
+    // let a = '     tRuonG     Tan       Hai'
+    // let b = []
+    // for (let i = 0; i <a.length ; i++) {
+    //     if(a[i] !== ' ' && a[i - 1] === ' '){
+    //         b.push(a[i].toUpperCase())
+    //     }else{
+    //             b.push(a[i].toLowerCase())
+    //     }
+    // }
+    // b = b.join('')
+    // let result = b.replace(/\s+/g,' ').trim()
+    // // trim để xóa khoảng trắng thừa ở đầu và cuối , replace(/\s+/g,' ') để xóa khoảng trống thừa
+    // console.log(result)
+
+
+    // let a = prompt('Nhập 1 số');
+    // let b = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+    // let c = []
+    // for (let i = 0; i < a.length; i++) {
+    //    c = b[a[i]];
+    //     document.write(c + ' ');
+    // }
+
+    // let numerators = [5, 2, 5]
+    // let denominators = [6, 3, 4]
+    // let max1 = numerators[0]
+    // let max2 = denominators[0]
+    // let index = 0
+    // for (let i = 0; i < numerators.length ; i++) {
+    //           if(max1/max2 < numerators[i]/denominators[i]){
+    //               max1 = numerators[i]
+    //               max2 = denominators[i]
+    //                index = i
+    //           }
+    // }
+    // console.log(max1 + '/' + max2 + ' là phân số lớn nhất, ' + 'có chỉ số là ' + index )
+
+
+    // let a =[7,2,5,3,5,3]
+    // let b =[7,2,5,4,6,3,56,67,7,56]
+    // let c = []
+    // for (let i = 0; i < b.length; i++) {
+    //     if( !a.includes(b[i]) && c.indexOf(b[i]) === -1 ){
+    //
+    //         c.push(b[i])
+    //     }
+    // }
+    // console.log(c)
+
+
+    // bài 1 yêu cầu 3
+
+
+    // let a = [1, 2, 3, 4, 5];
+    // let b = [];
+    // for (let i = 0; i < a.length; i++) {
+    //     b[i] = 0;
+    //     for (let j = 0; j <= i; j++) {
+    //         b[i] += a[j];
+    //     }
+    // }
+    // console.log(b);
+
+
+    // bài đề
+
+    // function f() {
+    //     while (true) {
+    //         var a = parseInt(prompt('nhập số phần tử của mảng'));
+    //         if (isNaN(a) === false && a > 0 && Number.isInteger(parseFloat(a))) {
+    //             if (a>=50 && a <= 0){
+    //                 alert('Chỉ được nhập từ 1 đến 50 phần tử');
+    //             }else {
+    //                 alert('Thêm thành công');
+    //                 break;
+    //             }
+    //         } else {
+    //             alert('không phải là số xin vui lòng nhập lại');
+    //         }
+    //     }
+    //     let count = 0;
+    //     let sum = 0
+    //     let num;
+    //     for (let i = 0; i < a; i++) {
+    //         num = parseInt(prompt('Input number'))
+    //         if(i % 2 === 0 && num % 2 !== 0){
+    //             sum += num
+    //             count ++
+    //         }
+    //     }
+    //     return sum/count
+    // }
+    //
+    // console.log(f());
+
+
+    // function soThanThiet(a,b) {
+    //     let countA=0;
+    //     let countB=0;
+    //     for (let i = 1; i <= a; i++) {
+    //         if (a%i===0){
+    //             countA+=i
+    //         }
+    //     }
+    //     for (let i = 1; i <= b; i++) {
+    //         if (b%i===0){
+    //             countB+=i
+    //         }
+    //     }
+    //     if (countA===countB){
+    //         return true
+    //     }else return false
+    // }
+    // console.log(soThanThiet(123,456))
+    // function TongSoLe(array) {
+    //     let count = 0;
+    //     let dem = 0;
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (i % 2 === 0 && array[i] % 2 !== 0) {
+    //             count += array[i];
+    //             dem++;
+    //         }
+    //     }
+    //     return count / dem;
+    // }
+    //
+    // console.log(TongSoLe([1, 2, 3, 4, 6, 7]));
+</script>
+</body>
+</html>

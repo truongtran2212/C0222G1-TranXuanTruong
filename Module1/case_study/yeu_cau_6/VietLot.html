@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+    </title>
+    <script src="VietLot.js"></script>
+    <style>
+        th, tr {
+            text-align: start;
+            font-size: 18px;
+            width: 500px;
+            margin: 30px;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        .number {
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+    </style>
+
+</head>
+<body onload="showTicket()">
+<div style="margin: 0 auto; width: 500px">
+    <h2 style="margin-top:50px">Xổ số CodeGym</h2>
+    <table id="tickets" style="margin: 20px 0px">
+    </table>
+    <h2 style="margin-top:50px">Kết quả quay số</h2>
+    <table id="result" style="margin: 20px 0px">
+    </table>
+    <button type="button" onclick="ticket()"> Mua vé</button>
+    <button type="button" style="margin-left: 10px" onclick="checkResult()"> Kết quả</button>
+    <h3 id="messResult"></h3>
+</div>
+
+</body>
+</html>

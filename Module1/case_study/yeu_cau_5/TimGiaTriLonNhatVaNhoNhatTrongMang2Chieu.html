@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minMax(m, n) {
+        let array = [
+            []
+        ];
+        for (let i = 0; i < m; i++) {
+            array.push([]);
+            for (let j = 0; j < n; j++) {
+                array[i].push(parseInt(prompt('Nhap phan tu cho ' + ' mảng ' + i)));
+            }
+        }
+        for (let i = 0; i < array.length; i++) {
+            array[i] = array[i].sort(function (a, b) {
+                return a - b;
+            });
+        }
+        let min = array[0][0];
+        let max = array[0][array[0].length - 1];
+        for (let i = 1; i < array.length; i++) {
+            if (array[i][0] < min) {
+                min = array[i][0];
+            }
+            if (array[i][array[0].length - 1] > max) {
+                max = array[i][array[0].length - 1];
+            }
+        }
+        return 'số có giá trị nhỏ nhất là: ' + min + '\n' + 'Số có giá trị lớn nhất là: ' + max;
+    }
+
+    console.log(minMax(parseInt(prompt('Nhap m')), parseInt(prompt('Nhap n'))));
+</script>
+</body>
+</html>

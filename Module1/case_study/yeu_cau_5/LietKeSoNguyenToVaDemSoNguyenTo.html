@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function isPrimeNumber(number) {
+        let count = 0;
+
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+
+        return count === 2;
+    }
+    function snt(m, n) {
+        let array = [
+            []
+        ];
+        let arr1=[]
+        let count = 0
+        for (let i = 0; i < m ; i++) {
+            array[i] = []
+            for (let j = 0; j < n ; j++) {
+                array[i][j] = parseInt(prompt('Nhập phần tử của mảng ' + i))
+                if(isPrimeNumber(array[i][j])){
+                    arr1.push(array[i][j])
+                    count++
+                }
+            }
+        }
+        return 'Số lượng số nguyên tố là: ' + count + '\n' +'Bao gồm ' + arr1;
+    }
+    let a = parseInt(prompt("m"))
+    let b = parseInt(prompt("n"))
+    let arr = snt(a,b);
+    console.log(arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     for (let i = 0; i < m; i++) {
+    //         array.push([]);
+    //         for (let j = 0; j < n; j++) {
+    //             array[i].push(parseInt(prompt('Nhap phan tu cho ' + ' mảng ' + i)));
+    //             if (isPrimeNumber(array[i][j])) {
+    //                 array.push(array[i][j]);
+    //             }
+    //         }
+    //     }
+    //     return ' có ' + array.length + ' số nt, là: ' + array;
+    // }
+    //
+    // console.log(snt((parseInt(prompt('Nhap m')), parseInt(prompt('Nhap n')))));
+
+
+    // function minMax(m, n) {
+    //     let array = [
+    //         []
+    //     ];
+    //     for (let i = 0; i < m; i++) {
+    //         array.push([]);
+    //         for (let j = 0; j < n; j++) {
+    //
+    //         }
+    //     }
+
+</script>
+</body>
+</html>

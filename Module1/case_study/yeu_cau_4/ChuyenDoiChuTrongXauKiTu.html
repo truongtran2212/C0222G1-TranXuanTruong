@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function f(a,b) {
+        for (let i = 0, c = 1; i < a.length; i++, c++) {
+            if (a[i] === ' ' && a[c] === ' ') {
+            } else if (i === 0) {
+                b.push(a[i].toUpperCase());
+            } else if (a[i] !== ' ' && a[i - 1] === ' ') {
+                b.push(a[i].toUpperCase());
+            } else {
+                b.push(a[i].toLowerCase());
+            }
+        }
+        return b
+    }
+    let a = 'trUOng          tAN     taI';
+    let b = [];
+    console.log(f(a,b).join(''));
+</script>
+</body>
+</html>
