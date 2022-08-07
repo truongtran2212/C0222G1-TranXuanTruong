@@ -1,6 +1,4 @@
-package com.codegym.model.facility;
-
-import javax.security.auth.login.FailedLoginException;
+package new_furama.model.facility;
 
 public class Room extends Facility {
     public Room() {

@@ -1,7 +1,7 @@
 package do_uu_tien.service;
 
-public interface WorkService {
+public interface JobService {
     void display();
-    void addNew();
-    void 
+    void addNewJob();
+    void updateJob();
 }

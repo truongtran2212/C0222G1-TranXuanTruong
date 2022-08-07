@@ -1,4 +1,4 @@
-package com.codegym.model;
+package new_furama.model;
 
 public class Booking {
     private String idBooking;

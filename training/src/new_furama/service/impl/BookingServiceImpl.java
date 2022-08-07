@@ -1,15 +1,13 @@
-package com.codegym.service.impl;
+package new_furama.service.impl;
 
-import com.codegym.model.Booking;
-import com.codegym.model.Customer;
-import com.codegym.model.facility.Facility;
-import com.codegym.service.BookingService;
-import com.codegym.service.FacilityService;
-import com.codegym.util.NotFoundCustomerException;
-import com.codegym.util.ReadAndWrite;
-import com.codegym.util.regex.Regex;
+import new_furama.model.Booking;
+import new_furama.model.Customer;
+import new_furama.model.facility.Facility;
+import new_furama.service.BookingService;
+import new_furama.util.NotFoundCustomerException;
+import new_furama.util.ReadAndWrite;
+import new_furama.util.regex.Regex;
 
-import java.awt.print.Book;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.ResolverStyle;
@@ -18,7 +16,7 @@ import java.util.*;
 public class BookingServiceImpl implements BookingService {
 
     public static Scanner scanner = new Scanner(System.in);
-    public static final String FILE_BOOKING = "src\\com\\codegym\\data\\booking.csv";
+    public static final String FILE_BOOKING = "src\\new_furama\\data\\booking.csv";
     public List<Booking> bookingList = getBookingList();
 
     @Override

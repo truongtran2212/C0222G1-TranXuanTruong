@@ -1,12 +1,11 @@
-package com.codegym.service.impl;
+package new_furama.service.impl;
 
-import com.codegym.model.Customer;
-import com.codegym.model.facility.Facility;
-import com.codegym.model.facility.House;
-import com.codegym.model.facility.Room;
-import com.codegym.model.facility.Villa;
-import com.codegym.service.FacilityService;
-import com.codegym.util.ReadAndWrite;
+import new_furama.model.facility.Facility;
+import new_furama.model.facility.House;
+import new_furama.model.facility.Room;
+import new_furama.model.facility.Villa;
+import new_furama.service.FacilityService;
+import new_furama.util.ReadAndWrite;
 
 import java.util.*;
 
@@ -20,7 +19,7 @@ public class FacilityServiceImpl implements FacilityService {
     public static final String NAME_FACILITY = "^[A-Z][a-zA-Z]+$";
     public static Map<Facility, Integer> facilityIntegerMap = getFacilityIntegerMap();
 
-    public static final String FILE_FACILITY = "src\\com\\codegym\\data\\facility.csv";
+    public static final String FILE_FACILITY = "src\\new_furama\\data\\facility.csv";
 
     @Override
     public void display() {

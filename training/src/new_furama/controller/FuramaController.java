@@ -1,9 +1,8 @@
-package com.codegym.controller;
+package new_furama.controller;
 
-import com.codegym.service.impl.BookingServiceImpl;
-import com.codegym.service.impl.CustomerServiceImpll;
-import com.codegym.service.impl.FacilityServiceImpl;
-import javafx.scene.transform.Scale;
+import new_furama.service.impl.BookingServiceImpl;
+import new_furama.service.impl.CustomerServiceImpll;
+import new_furama.service.impl.FacilityServiceImpl;
 
 import java.util.Scanner;
 

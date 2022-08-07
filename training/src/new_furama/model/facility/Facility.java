@@ -1,4 +1,4 @@
-package com.codegym.model.facility;
+package new_furama.model.facility;
 
 public abstract class  Facility {
    private String idFacility;

@@ -1,14 +1,11 @@
-package com.codegym.service.impl;
+package new_furama.service.impl;
 
-import com.codegym.model.Customer;
-import com.codegym.service.CustomerService;
-import com.codegym.util.ReadAndWrite;
-import com.codegym.util.RegexData;
-import com.codegym.util.regex.Regex;
-import com.sun.org.apache.xpath.internal.functions.FuncFalse;
-import javafx.scene.transform.Scale;
+import new_furama.model.Customer;
+import new_furama.service.CustomerService;
+import new_furama.util.ReadAndWrite;
+import new_furama.util.RegexData;
+import new_furama.util.regex.Regex;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,7 +14,7 @@ public class CustomerServiceImpll implements CustomerService {
 
     public Scanner scanner = new Scanner(System.in);
     public static List<Customer> customerList = getCustomerList();
-    public static final String FILE_CUSTOMER = "src\\com\\codegym\\data\\customer\\customer.csv";
+    public static final String FILE_CUSTOMER = "src\\new_furama\\data\\customer\\customer.csv";
 
     public static final String ID_CUSTOMER = "^CUS-[0-9]{4}-[A-Z]$";
     public static final String NAME_CUSTOMER = "([\\p{Lu}][\\p{Ll}]{0,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){1,10}";
@@ -77,9 +74,6 @@ public class CustomerServiceImpll implements CustomerService {
         }else{
             System.out.println("Đã có id này");
         }
-
-
-
     }
 
     @Override

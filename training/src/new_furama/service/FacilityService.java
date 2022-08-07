@@ -1,4 +1,4 @@
-package com.codegym.service;
+package new_furama.service;
 
 public interface FacilityService {
     void display();
